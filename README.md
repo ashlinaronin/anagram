@@ -1,8 +1,8 @@
 # _Wham! Bam! Anagram... Creator_
 
-##### _Compare a list of possible anagrams, {08/11/15}_
+##### _Compare a list of possible anagrams, 08/11/15_
 
-#### By _**Deron Johnson and Ashlin Aronin**_
+#### By _**Deron Johnson_ and _Ashlin Aronin**_
 
 ## Description
 
@@ -19,11 +19,11 @@ _W!B!A...C takes a starting word and a list of possible anagrams of that word. I
 
 ## Technologies Used
 
-_{HTML, CSS, Bootstrap, PHP, Silex, Twig, PHPUnit}_
+_HTML, CSS, Bootstrap, PHP, Silex, Twig, PHPUnit, Love_
 
 ### Legal
 
-Copyright (c) 2015 **_Deron Johnson and Ashlin Aronin_**
+Copyright (c) 2015 **_Deron Johnson_ and _Ashlin Aronin_**
 
 This software is licensed under the MIT license.
 
