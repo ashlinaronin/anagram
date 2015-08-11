@@ -103,5 +103,19 @@
             //Assert
             $this->assertEquals(array(), $result);
         }
+
+        function test_checkAnagram_noInputWord()
+        {
+            //Arrange
+            $test_AnagramChecker = new AnagramChecker;
+            $input_word = "";
+            $guess_array = array("share", "care", "bear", "wear");
+
+            //Act
+            $result = $test_AnagramChecker->checkAnagram($input_word, $guess_array);
+
+            //Assert
+            $this->assertEquals(array(), $result);
+        }
     }
 ?>
