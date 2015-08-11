@@ -1,6 +1,6 @@
 <?php
 
-    require_once "src/AnagramChecker.php"
+    require_once "src/AnagramChecker.php";
 
     class AnagramCheckerTest extends PHPUnit_Framework_TestCase
     {
