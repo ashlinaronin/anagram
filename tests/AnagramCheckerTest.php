@@ -47,5 +47,19 @@
             //Assert
             $this->assertEquals(array("tab"), $result);
         }
+
+        function test_checkAnagram_noCorrect()
+        {
+            //Arrange
+            $test_AnagramChecker = new AnagramChecker;
+            $input_word = "bat";
+            $guess_array = array("butt", "boof", "barrel");
+
+            //Act
+            $result = $test_AnagramChecker->checkAnagram($input_word, $guess_array);
+
+            //Assert
+            $this->assertEquals(array(), $result);
+        }
     }
 ?>
