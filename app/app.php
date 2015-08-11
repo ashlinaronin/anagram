@@ -14,8 +14,9 @@
     });
 
     $app->get("/anagrams", function() use($app) {
+        $guesses_array = explode(" ", $_GET['guesses']);
         $new_AnagramChecker = new AnagramChecker;
-        $results_array = $new_AnagramChecker->checkAnagram($_GET['input_word'], $_GET['guesses']);
+        $results_array = $new_AnagramChecker->checkAnagram($_GET['input_word'], $guesses_array);
         return $app['twig']->render('anagrams.html.twig', array('results' => $results_array));
     });
 
