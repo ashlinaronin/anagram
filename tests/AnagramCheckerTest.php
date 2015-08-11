@@ -131,5 +131,19 @@
             //Assert
             $this->assertEquals(array("tab"), $result);
         }
+
+        function test_checkAnagram_partialMatch()
+        {
+            //Arrange
+            $test_AnagramChecker = new AnagramChecker;
+            $input_word = "hamster";
+            $guess_array = array("ham", "tram", "rest", "meats", "mcchicken", "bogey");
+
+            //Act
+            $result = $test_AnagramChecker->checkAnagram($input_word, $guess_array);
+
+            //Assert
+            $this->assertEquals(array("ham", "tram", "meats", "rest"), $result);
+        }
     }
 ?>
