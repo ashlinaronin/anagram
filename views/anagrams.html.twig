@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+        <title>It's Not Delivery, It's Anagrams</title>
+    </head>
+    <body>
+        <div class='container'>
+            {% if results is not empty %}
+                <h1>Here is the list of all of the guesses that you made for possible anagrams of your input word that were actually anagrams of that word, but maybe not actually real English words.</h1>
+                <ul>
+                    {% for anagram in results %}
+                        <li>{{ anagram }}</li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <h1>There are no anagrams. Sorry.</h1>
+            {% endif %}
+            <p><a href="/">Why not try it again?</a></p>
+        </div>
+    </body>
+</html>
