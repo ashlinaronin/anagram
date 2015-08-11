@@ -89,5 +89,19 @@
             //Assert
             $this->assertEquals(array("%1cah"), $result);
         }
+
+        function test_checkAnagram_noGuesses()
+        {
+            //Arrange
+            $test_AnagramChecker = new AnagramChecker;
+            $input_word = "bif";
+            $guess_array = array();
+
+            //Act
+            $result = $test_AnagramChecker->checkAnagram($input_word, $guess_array);
+
+            //Assert
+            $this->assertEquals(array(), $result);
+        }
     }
 ?>
