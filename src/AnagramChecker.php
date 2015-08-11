@@ -5,7 +5,8 @@
         function checkAnagram($input_word, $guess_array)
         {
             $output_array = array();
-
+            $input_word = strtolower($input_word);
+            
             foreach ($guess_array as $word) {
 
                 if ($word != $input_word) {
