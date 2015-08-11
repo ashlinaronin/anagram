@@ -14,7 +14,13 @@
     });
 
     $app->get("/anagrams", function() use($app) {
-        $guesses_array = explode(" ", $_GET['guesses']);
+        // If user did not input any guesses, send empty array to checker method.
+        if (empty($_GET['guesses'])) {
+            $guesses_array = array();
+        } else {
+            $guesses_array = explode(" ", $_GET['guesses']);
+        }
+
         $new_AnagramChecker = new AnagramChecker;
         $results_array = $new_AnagramChecker->checkAnagram($_GET['input_word'], $guesses_array);
         return $app['twig']->render('anagrams.html.twig', array('results' => $results_array));
