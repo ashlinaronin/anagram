@@ -143,7 +143,7 @@
             $result = $test_AnagramChecker->checkAnagram($input_word, $guess_array);
 
             //Assert
-            $this->assertEquals(array("ham", "tram", "meats", "rest"), $result);
+            $this->assertEquals(array("ham", "tram", "rest", "meats"), $result);
         }
     }
 ?>
