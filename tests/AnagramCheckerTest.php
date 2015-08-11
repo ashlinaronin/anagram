@@ -75,5 +75,19 @@
             //Assert
             $this->assertEquals(array(), $result);
         }
+
+        function test_checkAnagram_nonLetter()
+        {
+            //Arrange
+            $test_AnagramChecker = new AnagramChecker;
+            $input_word = "ca%h1";
+            $guess_array = array();
+
+            //Act
+            $result = $test_AnagramChecker->checkAnagram($input_word, $guess_array);
+
+            //Assert
+            $this->assertEquals(array("%1cah"), $result);
+        }
     }
 ?>
