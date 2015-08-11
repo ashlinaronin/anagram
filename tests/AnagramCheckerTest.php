@@ -159,5 +159,19 @@
             //Assert
             $this->assertEquals(array("shac"), $result);
         }
+
+        function test_checkAnagram_mixedCaseGuesses()
+        {
+            //Arrange
+            $test_AnagramChecker = new AnagramChecker;
+            $input_word = "cAsh";
+            $guess_array = array("doG", "cash", "moneyGunit", "yo", "saCH");
+
+            //Act
+            $result = $test_AnagramChecker->checkAnagram($input_word, $guess_array);
+
+            //Assert
+            $this->assertEquals(array("sach"), $result);
+        }
     }
 ?>
