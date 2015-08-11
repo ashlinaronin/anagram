@@ -81,7 +81,7 @@
             //Arrange
             $test_AnagramChecker = new AnagramChecker;
             $input_word = "ca%h1";
-            $guess_array = array();
+            $guess_array = array("l33t", "n00bz0r", "%1cah");
 
             //Act
             $result = $test_AnagramChecker->checkAnagram($input_word, $guess_array);
