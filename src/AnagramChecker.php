@@ -4,11 +4,11 @@
     {
         function checkAnagram($input_word, $guess_array)
         {
-            $input_word_array = str_split($input_word);
             $output_array = array();
 
             foreach ($guess_array as $word) {
 
+                $input_word_array = str_split($input_word);
                 $letter_array = str_split($word);
                 foreach($letter_array as $letter) {
                     if (in_array($letter, $input_word_array)) {
