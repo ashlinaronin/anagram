@@ -6,8 +6,9 @@
         {
             $output_array = array();
             $input_word = strtolower($input_word);
-            
+
             foreach ($guess_array as $word) {
+                $word = strtolower($word);
 
                 if ($word != $input_word) {
                     // Count which letter of guess we are on to determine partial matches
